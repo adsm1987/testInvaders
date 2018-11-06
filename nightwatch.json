@@ -1,0 +1,56 @@
+{
+  "src_folders" : ["tests"],
+  "output_folder" : "reports",
+  "custom_commands_path" : "./helpers/custom_commands",
+  "custom_assertions_path" : "",
+  "page_objects_path" : "./pages",
+  "globals_path" : "./globalsModule.js",
+
+  "selenium" : {
+    "start_process" : true,
+    "server_path" : "./servers/selenium-server-standalone-3.9.1.jar",
+    "log_path" : "./logs/",
+    "port" : 4444,
+    "cli_args" : {
+      "webdriver.chrome.driver" : "./drivers/chromedriver",
+      "webdriver.gecko.driver" : "",
+      "webdriver.edge.driver" : ""
+    }
+  },
+
+  "test_settings" : {
+    "default" : {
+      "launch_url" : "https://jscrambler.com/",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "chromeOptions" : {
+          "args" : [
+          "--no-sandbox",
+          "window-size=1920,1080"
+          ]
+        },
+        "acceptSslCerts": true
+      }
+    },
+
+    "chrome" : {
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "marionette": true
+      }
+    },
+
+    "edge" : {
+      "desiredCapabilities": {
+        "browserName": "MicrosoftEdge"
+      }
+    }
+  }
+}
