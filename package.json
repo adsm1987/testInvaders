@@ -1,0 +1,23 @@
+{
+  "name": "testInvaders",
+  "version": "1.0.0",
+  "description": "This is a test project for a space invaders game",
+  "main": "nightwatch.json",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "nightwatch": "^0.9.21"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adsm1987/testInvaders.git"
+  },
+  "author": "Abraham Mesa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adsm1987/testInvaders/issues"
+  },
+  "homepage": "https://github.com/adsm1987/testInvaders#readme"
+}
